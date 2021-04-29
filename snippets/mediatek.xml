@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="mediatek"
+          fetch="https://github.com/mtk-watch"
+          revision="t-alps-q0.mp1-V9.122.1" />
+
+  <remote name="mediatek-gitlab"
+          fetch="https://gitlab.com/mtk-watch"
+          revision="t-alps-q0.mp1-V9.122.1" />
+
+  <!-- Device repos -->
+  <project path="device/mediatek" name="android_device_mediatek" remote="mediatek" />
+  <project path="device/mediateksample" name="android_device_mediateksample" remote="mediatek" />
+
+  <!-- External repos -->
+  <project path="external/apache-http" name="android_external_apache-http" remote="mediatek" />
+  <project path="external/avb" name="android_external_avb" remote="mediatek" />
+  <project path="external/chromium-libpac" name="android_external_chromium-libpac" remote="mediatek" />
+  <project path="external/dng_sdk" name="android_external_dng_sdk" remote="mediatek" />
+  <project path="external/dnsmasq" name="android_external_dnsmasq" remote="mediatek" />
+  <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="mediatek" />
+  <project path="external/fsck_msdos" name="android_external_fsck_msdos" remote="mediatek" />
+  <project path="external/glide" name="android_external_glide" remote="mediatek" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="mediatek" />
+  <project path="external/ImageMagick" name="android_external_ImageMagick" remote="mediatek" />
+  <project path="external/libavc" name="android_external_libavc" remote="mediatek" />
+  <project path="external/libcups" name="android_external_libcups" remote="mediatek" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="mediatek" />
+  <project path="external/libcxxabi" name="android_external_libcxxabi" remote="mediatek" />
+  <project path="external/libexif" name="android_external_libexif" remote="mediatek" />
+  <project path="external/libhevc" name="android_external_libhevc" remote="mediatek" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="mediatek" />
+  <project path="external/libphonenumber" name="android_external_libphonenumber" remote="mediatek" />
+  <project path="external/mtpd" name="android_external_mtpd" remote="mediatek" />
+  <project path="external/noto-fonts" name="android_external_noto-fonts" remote="mediatek" />
+  <project path="external/okhttp" name="android_external_okhttp" remote="mediatek" />
+  <project path="external/ppp" name="android_external_ppp" remote="mediatek" />
+  <project path="external/skia" name="android_external_skia" remote="mediatek" />
+  <project path="external/sqlite" name="android_external_sqlite" remote="mediatek" />
+  <project path="external/tensorflow" name="android_external_tensorflow" remote="mediatek" />
+  <project path="external/v8" name="android_external_v8" remote="mediatek" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="mediatek" />
+
+  <!-- Frameworks repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="mediatek" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="mediatek" />
+  <project path="frameworks/ml" name="android_frameworks_ml" remote="mediatek" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="mediatek" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="mediatek" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="mediatek" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="mediatek" />
+
+  <!-- General repos -->
+  <project path="build/make" name="android_build_make" remote="mediatek" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="art" name="android_art" remote="mediatek" />
+  <project path="bionic" name="android_bionic" remote="mediatek" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="mediatek" />
+  <project path="ccu_tool" name="android_ccu_tool" remote="mediatek" />
+  <project path="kernel-3.18" name="android_kernel-3.18" remote="mediatek" />
+  <project path="kernel-4.14" name="android_kernel-4.14" remote="mediatek" />
+  <project path="kernel-4.4" name="android_kernel-4.4" remote="mediatek" />
+  <project path="kernel-4.9" name="android_kernel-4.9" remote="mediatek" />
+  <project path="kernel-4.9-lc" name="android_kernel-4.9-lc" remote="mediatek" />
+  <project path="libcore" name="android_libcore" remote="mediatek" />
+  <project path="trusty" name="android_trusty" remote="mediatek" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="mediatek" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="mediatek" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" remote="mediatek" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="mediatek" />
+  <project path="packages/apps/Email" name="android_packages_apps_Email" remote="mediatek" />
+  <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" remote="mediatek" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="mediatek" />
+  <project path="packages/apps/PermissionController" name="android_packages_apps_PermissionController" remote="mediatek" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="mediatek" />
+  <project path="packages/apps/StorageManager" name="android_packages_apps_StorageManager" remote="mediatek" />
+  <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="mediatek" />
+  <project path="packages/providers/BlockedNumberProvider" name="android_packages_providers_BlockedNumberProvider" remote="mediatek" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="mediatek" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="mediatek" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="mediatek" />
+  <project path="packages/providers/TvProvider" name="android_packages_providers_TvProvider" remote="mediatek" />
+  <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="mediatek" />
+  <project path="packages/services/Car" name="android_packages_services_Car" remote="mediatek" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="mediatek" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="mediatek" />
+
+  <!-- System repos -->
+  <project path="system/apex" name="android_system_apex" remote="mediatek" />
+  <project path="system/bt" name="android_system_bt" remote="mediatek" />
+  <project path="system/core" name="android_system_core" remote="mediatek" />
+  <project path="system/extras" name="android_system_extras" remote="mediatek" />
+  <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" remote="mediatek" />
+  <project path="system/keymaster" name="android_system_keymaster" remote="mediatek" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="mediatek" />
+  <project path="system/netd" name="android_system_netd" remote="mediatek" />
+  <project path="system/nfc" name="android_system_nfc" remote="mediatek" />
+  <project path="system/security" name="android_system_security" remote="mediatek" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="mediatek" />
+  <project path="system/tools/aidl" name="android_system_tools_aidl" remote="mediatek" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="mediatek" />
+  <project path="system/vold" name="android_system_vold" remote="mediatek" />
+
+  <!-- Vendor repos -->
+  <project path="vendor/mediatek" name="android_vendor_mediatek" remote="mediatek-gitlab" />
+
+</manifest>
