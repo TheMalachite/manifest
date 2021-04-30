@@ -780,4 +780,7 @@
   <!-- Add all MediaTek repos -->
   <include name="snippets/mediatek.xml" />
 
+  <!-- Add a few LineageOS repos -->
+  <include name="snippets/lineage.xml" />
+
 </manifest>
