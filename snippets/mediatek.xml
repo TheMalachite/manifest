@@ -61,6 +61,10 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="build/soong" name="android_build_soong" remote="mediatek" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <project path="art" name="android_art" remote="mediatek" />
   <project path="bionic" name="android_bionic" remote="mediatek" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="mediatek" />
