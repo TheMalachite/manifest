@@ -10,7 +10,7 @@
           revision="t-alps-q0.mp1-V9.122.1" />
 
   <!-- Device repos -->
-  <project path="device/mediatek" name="android_device_mediatek" remote="mediatek" />
+  <project path="device/mediatek" name="TheMalachite/android_device_mediatek" remote="github" revision="t-alps-q0.mp1-V9.122.1" />
   <project path="device/mediateksample" name="TheMalachite/android_device_mediateksample" remote="github" revision="t-alps-q0.mp1-V9.122.1" />
 
   <!-- External repos -->
