@@ -98,7 +98,15 @@
   <remove-project name="platform/libcore" />
 
   <!-- Hardware repos -->
+  <remove-project name="platform/hardware/broadcom/libbt" />
+  <remove-project name="platform/hardware/broadcom/wlan" />
+  <remove-project name="platform/hardware/google/apf" />
+  <remove-project name="platform/hardware/google/av" />
+  <remove-project name="platform/hardware/google/easel" />
+  <remove-project name="platform/hardware/google/interfaces" />
+  <remove-project name="platform/hardware/google/pixel" />
   <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/invensense" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/bootctrl" />
@@ -127,6 +135,7 @@
   <remove-project name="platform/hardware/qcom/sdm845/thermal" />
   <remove-project name="platform/hardware/qcom/sdm845/vr" />
   <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/hardware/ti/am57x" />
 
   <!-- Packages repos -->
   <remove-project name="platform/packages/apps/CertInstaller" />
