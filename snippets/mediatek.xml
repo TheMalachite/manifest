@@ -69,11 +69,8 @@
   <project path="bionic" name="android_bionic" remote="mediatek" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="mediatek" />
   <project path="ccu_tool" name="android_ccu_tool" remote="mediatek" />
-  <project path="kernel-3.18" name="android_kernel-3.18" remote="mediatek" />
   <project path="kernel-4.14" name="android_kernel-4.14" remote="mediatek" />
-  <project path="kernel-4.4" name="android_kernel-4.4" remote="mediatek" />
   <project path="kernel-4.9" name="android_kernel-4.9" remote="mediatek" />
-  <project path="kernel-4.9-lc" name="android_kernel-4.9-lc" remote="mediatek" />
   <project path="libcore" name="android_libcore" remote="mediatek" />
   <project path="trusty" name="android_trusty" remote="mediatek" />
 
